@@ -52,7 +52,7 @@ const average = (arr) =>
 
 /*********************************************************************************** */
 
-const KEY = "f84fc31d";
+const KEY = "68533e66";
 export default function App() {
   const [query, setQuery] = useState("");
   const [movies, setMovies] = useState([]);
@@ -83,7 +83,7 @@ export default function App() {
 
           SetError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
+            ` http://www.omdbapi.com/?i=tt3896198&apikey=${KEY}&s=${query}`,
             { signal: controller.signal }
           );
 
