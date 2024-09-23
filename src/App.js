@@ -59,7 +59,7 @@ const KEY = "68533e66";
 export default function App() {
   const [query, setQuery] = useState("");
 
-  const [watched, setWatched] = useLocalStorage([tempMovieData], "watched");
+  const [watched, setWatched] = useLocalStorage([], "watched");
   //lisy
   //const storedValue = localStorage.getItem("watched");
   //return JSON.parse(storedValue);
